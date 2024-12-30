@@ -19,7 +19,7 @@ export const getMovies = async (): Promise<Movie[]> => {
 
     // Extract the result array
     const movies = response.data.result;
-    return movies.filter((movie): movie is Movie => {
+    return movies.filter((movie: any): movie is Movie => {
       return movie && typeof movie === 'object' && 'rank' in movie;
     });
   } catch (error) {
