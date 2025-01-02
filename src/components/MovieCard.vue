@@ -12,6 +12,7 @@ defineProps<{
     <div class="flex md:flex-row flex-col">
       <img :src="movie.Poster_Link" :alt="movie.Series_Title" class="w-full md:w-32 h-48 md:h-auto object-cover" />
       <div class="p-4 flex-1">
+        <h3 class="text-lg font-bold text-green-500">{{ movie.rank }}</h3>
         <h3 class="text-lg font-semibold text-gray-900">{{ movie.Series_Title }}</h3>
         <div class="mt-2 flex items-center text-sm text-gray-600">
           <Star class="w-4 h-4 text-green-500 mr-1" />

@@ -23,6 +23,7 @@ defineProps<{
     <div class="grid md:grid-cols-3 gap-6">
       <img :src="movie.Poster_Link" :alt="movie.Series_Title" class="w-full rounded-lg shadow-md" />
       <div class="md:col-span-2">
+        <h1 class="text-3xl font-bold text-green-500">{{ movie.rank }}</h1>
         <h1 class="text-3xl font-bold text-gray-900">{{ movie.Series_Title }}</h1>
         
         <div class="mt-4 flex flex-wrap gap-4">
